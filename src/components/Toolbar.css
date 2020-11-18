@@ -1,0 +1,14 @@
+
+
+.list {
+    margin-top: 15px;
+    display: flex;
+    width: 400px;
+    margin-left: 0;
+
+}
+
+.selectBtn {
+    color: red;
+
+}
