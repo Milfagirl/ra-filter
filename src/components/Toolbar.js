@@ -8,10 +8,10 @@ function Toolbar (props) {
         <div className= 'list'>
         { filters.map( filter => {
             if (filter === selected.selected) {
-                return <button onClick={onSelectFilter} className ='selectBtn'>{filter}</button>
+                return <button onClick={(evt) => onSelectFilter(evt)} className ='selectBtn'>{filter}</button>
             }
             else {
-                return <button onClick={onSelectFilter}>{filter}</button>
+                return <button onClick={(evt) => onSelectFilter(evt)}>{filter}</button>
             }
             })
         }

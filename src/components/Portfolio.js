@@ -66,18 +66,12 @@ class Portfolio extends React.Component {
             category: "Flayers"
         }];
 
-        onSelectFilter(evt) {
-            let value = ''
-            evt.preventDefault();
-            this.setState(state => {
-                return {selected : evt.target.childNodes[0].data}
-            });
-            // value = evt.target.childNodes[0]
-            // return value;
-
-
-
-        }
+    onSelectFilter(evt) {
+        evt.preventDefault();
+        this.setState(state => {
+            return {selected : evt.target.childNodes[0].data}
+        });
+    }
     render() {
 
         return (
